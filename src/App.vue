@@ -1,6 +1,15 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Welcome to Your Vue.js + TypeScript App</h1>
-  </div>
+	<div id="app">
+		<fusioncharts
+			:width="width"
+			:height="height"
+			:type="type"
+			:dataFormat="dataFormat"
+			:dataSource="dataSource"
+		>
+		</fusioncharts>
+	</div>
 </template>
+
+<script src="./App.ts">
+</script>
