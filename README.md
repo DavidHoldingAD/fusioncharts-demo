@@ -1,29 +1,25 @@
-# fusion
+# FusionCharts for Vue
 
-## Project setup
-```
-yarn install
-```
+This repository contains an application to demonstrate (or just try out) common scenarios of [Vue](https://vuejs.org/)
+integration of [FusionCharts](https://www.fusioncharts.com/) and [FusionTime](https://www.fusioncharts.com/fusiontime)
+ in particular.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Development
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+- Project setup
 
-### Run your tests
-```
-yarn run test
-```
+  ```bash
+  yarn install
+  ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+- Compile and hot-reload for development
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  ```bash
+  yarn run serve
+  ```
+
+- Compile and minify for production
+
+  ```bash
+  yarn run build
+  ```
