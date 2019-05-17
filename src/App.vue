@@ -1,13 +1,13 @@
 <template>
 	<div id="app">
-		<fusioncharts
-			:width="width"
-			:height="height"
-			:type="type"
-			:dataFormat="dataFormat"
-			:dataSource="dataSource"
-		>
-		</fusioncharts>
+		<h1>FusionCharts for Vue</h1>
+		<p>
+			<router-link :to="{ name: 'plotting-multiple-series-on-time-axis' }">
+				Plotting Multiple Series on Time Axis
+			</router-link>
+		</p>
+		<router-view>
+		</router-view>
 	</div>
 </template>
 
