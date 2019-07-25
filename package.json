@@ -7,18 +7,18 @@
 		"build": "vue-cli-service build"
 	},
 	"dependencies": {
-		"fusioncharts": "^3.13.4",
+		"fusioncharts": "^3.13.5-sr.1",
 		"vue": "^2.6.10",
-		"vue-class-component": "^7.0.2",
-		"vue-fusioncharts": "^3.0.3",
-		"vue-property-decorator": "^8.1.0",
-		"vue-router": "^3.0.6"
+		"vue-class-component": "^7.1.0",
+		"vue-fusioncharts": "^3.0.4",
+		"vue-property-decorator": "^8.2.1",
+		"vue-router": "^3.0.7"
 	},
 	"devDependencies": {
 		"@types/fusioncharts": "^3.11.5",
-		"@vue/cli-plugin-typescript": "^3.7.0",
-		"@vue/cli-service": "^3.7.0",
-		"typescript": "^3.4.3",
-		"vue-template-compiler": "^2.5.21"
+		"@vue/cli-plugin-typescript": "^3.9.0",
+		"@vue/cli-service": "^3.9.3",
+		"typescript": "^3.5.3",
+		"vue-template-compiler": "^2.6.10"
 	}
 }
