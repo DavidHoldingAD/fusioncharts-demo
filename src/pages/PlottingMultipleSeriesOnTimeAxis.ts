@@ -3,7 +3,7 @@ import { Component } from "vue-property-decorator";
 import FusionCharts, * as fusioncharts from "fusioncharts";
 
 @Component({
-	name: "plotting-multiple-series-on-time-axis"
+	name: "plotting-multiple-series-on-time-axis",
 })
 export default class PlottingMultipleSeriesOnTimeAxis extends Vue {
 	protected width: string = "100%";
