@@ -11,6 +11,9 @@
 			:dataSource="dataSource"
 		>
 		</fusioncharts>
+		<p>
+			See more in <a href="https://www.fusioncharts.com/fusiontime/examples/plotting-multiple-series-on-time-axis">documentation</a>.
+		</p>
 	</div>
 </template>
 
