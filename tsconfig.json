@@ -1,41 +1,17 @@
 {
 	"compilerOptions": {
-		"target": "es5",
-		"module": "esnext",
-		"strict": true,
-		"jsx": "preserve",
-		"importHelpers": true,
-		"moduleResolution": "node",
-		"experimentalDecorators": true,
-		"esModuleInterop": true,
-		// due to an error in "fusioncharts/index.d.ts"
-		"noImplicitAny": false,
+		// this is required to import the FusionCharts class
 		"allowSyntheticDefaultImports": true,
-		"sourceMap": true,
-		"baseUrl": ".",
-		"types": [
-			"webpack-env"
-		],
-		"paths": {
-			"@/*": [
-				"src/*"
-			]
-		},
-		"lib": [
-			"esnext",
-			"dom",
-			"dom.iterable",
-			"scripthost"
-		]
-	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.tsx",
-		"src/**/*.vue",
-		"tests/**/*.ts",
-		"tests/**/*.tsx"
-	],
-	"exclude": [
-		"node_modules"
-	]
+		// this is required due to an error in "fusioncharts/index.d.ts"
+		"noImplicitAny": false,
+		// this is required by TypeScript decorators
+		"experimentalDecorators": true,
+		// this aligns with Vue's browser support
+		"target": "es5",
+		// this enables stricter inference for data properties on `this`
+		"strict": true,
+		// if using webpack 2+ or rollup, to leverage tree shaking:
+		"module": "es2015",
+		"moduleResolution": "node"
+	}
 }
