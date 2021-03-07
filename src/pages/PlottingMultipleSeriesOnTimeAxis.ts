@@ -1,10 +1,8 @@
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
+import Component from "vue-class-component";
 import FusionCharts, * as fusioncharts from "fusioncharts";
 
-@Component({
-	name: "plotting-multiple-series-on-time-axis",
-})
+@Component
 export default class PlottingMultipleSeriesOnTimeAxis extends Vue {
 	protected width: string = "100%";
 	protected height: string = "400";

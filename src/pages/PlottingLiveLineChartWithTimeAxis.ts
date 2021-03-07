@@ -1,10 +1,8 @@
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
+import Component from "vue-class-component";
 import FusionCharts, * as fusioncharts from "fusioncharts";
 
-@Component({
-	name: "plotting-live-line-chart-with-time-axis",
-})
+@Component
 export default class PlottingLiveLineChartWithTimeAxis extends Vue {
 	private static readonly INTERVAL: number = 5000;
 	private static readonly MONTHS: string[] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -64,7 +62,7 @@ export default class PlottingLiveLineChartWithTimeAxis extends Vue {
 	protected onChartInitialized(e: fusioncharts.EventObject, args: any): void {
 		const chart: FusionCharts.FusionCharts = e.sender;
 
-		this.m_timeout = setTimeout(
+		this.m_timeout = window.setTimeout(
 			() => this.updateData(chart),
 			PlottingLiveLineChartWithTimeAxis.INTERVAL);
 	}
@@ -85,7 +83,7 @@ export default class PlottingLiveLineChartWithTimeAxis extends Vue {
 		//this.m_dataStore.appendRows([
 		//	[dateString, "Grocery", value]
 		//]);
-		this.m_timeout = setTimeout(
+		this.m_timeout = window.setTimeout(
 			() => this.updateData(chart),
 			PlottingLiveLineChartWithTimeAxis.INTERVAL);
 	}
