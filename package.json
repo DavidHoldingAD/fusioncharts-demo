@@ -14,7 +14,6 @@
 		"vue-router": "^3.5.1"
 	},
 	"devDependencies": {
-		"@types/fusioncharts": "^3.11.5",
 		"@vue/cli-plugin-typescript": "^4.5.13",
 		"@vue/cli-service": "^4.5.13",
 		"typescript": "^4.2.4",
